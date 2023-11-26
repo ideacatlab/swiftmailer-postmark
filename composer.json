@@ -1,0 +1,39 @@
+{
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.org"
+        }
+    ],
+    "name": "icsweet/swiftmailer-postmark",
+    "description": "A `IcSweet/Swiftmailer` Transport for Postmark.",
+    "require": {
+        "guzzlehttp/guzzle": "^6.0|^7.8.0",
+        "icsweet/swiftmailer": "dev-main"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.4.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-0": {
+            "Postmark\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "src/",
+            "tests/"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "suggest": {},
+    "authors": [
+        {
+            "name": "IdeaCat",
+            "email": "php@ideacat.ro"
+        }
+    ]
+}
